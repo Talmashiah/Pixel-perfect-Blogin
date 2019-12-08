@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blogin</title>
+    <link rel="stylesheet" href="style/global.css">
+    <script src="https://kit.fontawesome.com/f14168274d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="screen" onclick="toggleMenu()"></div>
+    <div class="modal" onclick="onCloseModal('.modal')" hidden>
+        <div class="inner-container">
+            <span class="close" onclick="onCloseModal('.modal')">x</span>
+            <h2 class="modal-title">Duis aute irure dolor in
+                henderit in voluptate.
+            </h2>
+            <p class="modal-info">
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p class="modal-info-last">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur...
+            </p>
+        </div>
+    </div>
+    <header>
+        <nav class="main-nav container flex space-between align-center">
+            <div class="main-logo"><span class="main-logo-B">B</span>login<span class="main-logo-dot">.</span></div>
+            <button id="menu-btn" class="menu-btn" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+            <ul class="main-menu clean-list flex">
+                <li class="dropdown" onclick="toggleBorder(this); onDropDownClick(this)"><a href="#id12">Journal</a>
+                    <div id="#id12" class="dropdown-content">
+                            <div>October 2016</div>
+                            <div>January 2017</div>
+                            <div>April 2017</div>
+                            <div>July 2017</div>
+                    </div>
+                </li>
+                <li onclick="toggleBorder(this)"><a href="#">About</a></li>
+                <li onclick="toggleBorder(this)"><a href="#">Work</a></li>
+                <li onclick="toggleBorder(this)"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content container">
+        <ul class="posts-container clean-list">
+            <li class="post flex">
+                <div class="post-img">
+                    <img src="site/img/001.jpg" alt="" class="post-image" />
+                </div>
+                <div class="post-content">
+                    <h2 class="post-title">Duis aute irure dolor in
+                        henderit in voluptate.
+                    </h2>
+                    <p class="post-info">
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                        doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p class="post-info-last">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...
+                    </p>
+                    <button class="post-btn" onclick="onPostBtn()">Continue Reading</button>
+                </div>
+            </li>
+            <li class="post flex">
+                <div class="post-img">
+                    <img src="site/img/002.jpg" alt="" class="post-image" />
+                </div>
+                <div class="post-content">
+                    <h2 class="post-title">Duis aute irure dolor in
+                        henderit in voluptate.
+                    </h2>
+                    <p class="post-info">
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                        doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p class="post-info-last">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...
+                    </p>
+                    <button class="post-btn" onclick="onPostBtn()">Continue Reading</button>
+                </div>
+            </li>
+            <li class="post flex">
+                <div class="post-img">
+                    <img src="site/img/003.jpg" alt="" class="post-image" />
+                </div>
+                <div class="post-content">
+                    <h2 class="post-title">Duis aute irure dolor in
+                        henderit in voluptate.
+                    </h2>
+                    <p class="post-info">
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo
+                        doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p class="post-info-last">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur...
+                    </p>
+                    <button class="post-btn" onclick="onPostBtn()">Continue Reading</button>
+                </div>
+            </li>
+        </ul>
+    </main>
+
+    <section class="pages-select container flex align-center space-between">
+        <div class="prev-btn">
+            <span class="prev-arrow">&#8592;</span>
+            <span>Previous</span>
+        </div>
+
+        <div class="next-btn">
+            <span>Next</span>
+            <span class="next-arrow">&#8594;</span>
+        </div>
+
+    </section>
+
+    <footer class="main-footer flex align-center flex.column justify-content">
+        <div class="footer-container">
+            <div class="main-logo">Blogin<span class="main-logo-dot">.</span></div>
+            <div class="small">
+                <small>© 2014 Blogin.com - All Rights Reserved - Find more free Templates at <span
+                        class="darker">Pixelhint.com</span></small>
+            </div>
+            <div class="social-links">
+                <a href="#" class="facebook">
+                    <div class="logo-container">
+                        <i class="fab fa-facebook-f" style="color: white;"></i>
+                    </div>
+                </a>
+                <a href="#" class="tweeter">
+                    <div class="logo-container">
+                        <i class="fab fa-twitter" style="color: white;"></i>
+                    </div>
+                </a>
+                <a href="#" class="behance">
+                    <div class="logo-container">
+                        <i class="fab fa-behance" style="color: white;"></i>
+                    </div>
+                </a>
+                <a href="#" class="instagrm">
+                    <div class="logo-container">
+                        <i class="fab fa-instagram" style="color: white;"></i>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var gPrvEl;
+
+        function toggleMenu() {
+            document.body.classList.toggle('menu-open');
+        }
+
+        function toggleBorder(element) {
+            if (gPrvEl && gPrvEl.classList.contains('active')) {
+                gPrvEl.classList.remove('active')
+            }
+            element.classList.toggle('active');
+            gPrvEl = element;
+
+        }
+
+        function onCloseModal(elementClass) {
+        document.querySelector(`${elementClass}`).hidden = true;
+        }
+
+        function onPostBtn(){
+            document.querySelector('.modal').hidden = false;
+        }
+
+        function onDropDownClick(element){
+            element.classList.toggle('open-menu')
+        }
+
+    </script>
+</body>
+
+</html>
